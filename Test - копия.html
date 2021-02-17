@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cs.css">
+</head>
+
+<body>
+    <h1>Hello VSC</h1>
+
+    <table align="right" border="1px">
+        <tr>
+            <td><input class="op" type="submit" value="pow" onclick="operations()"></input>
+            </td>
+            <td><input class="op" type="submit" value="/" onclick="operations()"></input>
+            </td>
+            <td><input class="op" type="submit" value="*" onclick="operations()"></input>
+            </td>
+            <td><input class="op" type="submit" value="-" onclick="operations()"></input>
+            </td>
+        </tr>
+        <tr>
+            <td><input class="bb" type="submit" value="7"></input>
+            </td>
+            <td><input class="bb" type="submit" value="8"></input>
+            </td>
+            <td><input class="bb" type="submit" value="9"></input>
+            </td>
+            <td rowspan="2"><input class="op" type="submit" value="+" onclick="operations()"></input>
+            </td>
+        </tr>
+        <tr>
+            <td><input class="bb" type="submit" value="4"></input>
+            </td>
+            <td><input class="bb" type="submit" value="5"></input>
+            </td>
+            <td><input class="bb" type="submit" value="6"></input>
+            </td>
+        </tr>
+        <tr>
+            <td><input class="bb" type="submit" value="1" onclick="con()"></input>
+            </td>
+            <td><input class="bb" type="submit" value="2" onclick="con()"></input>
+            </td>
+            <td><input class="bb" type="submit" value="3" onclick="con()"></input>
+            </td>
+            <td rowspan="2"><input class="op" type="submit" value="√" class="but" onclick="operations()"></input>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input class="bb" type="submit" value="0"></input>
+            </td>
+            <td><input type="submit" value="."></input>
+            </td>
+        </tr>
+    </table>
+    <table align="right" border="1px">
+        <tr>
+            <td><label>First number</label></input>
+            </td>
+            <td><label>Second number</label></input>
+            </td>
+            <td><label>Result</label></input>
+            </td>
+
+        </tr>
+        <tr>
+            <td><input type="text" id="val1" onfocus="foc()"></input>
+            </td>
+            <td><input type="text" id="val2" onfocus="foc2()"></input>
+            </td>
+            <td><input type="text" id="val3"></input>
+            </td>
+
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input type="submit" value="Clear" onclick="cl()">
+            </td>
+        </tr>
+    </table>
+    <script src="sc.js"></script>
+</body>
+
+</html>
